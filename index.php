@@ -20,7 +20,7 @@
             <h1 style="text-align: center;">Data Table</h1> 
         </div>
         <?php
-            $s = $_GET["s"];
+            $s = isset($_GET["s"]) ? $_GET["s"] : "";
          
             $displayColumns = array("ID", "WHOID", "WHATID", "SUBJECT", "ACTIVITYDATE", "STATUS", "OWNERID", "DESCRIPTION", "ISCLOSED");
             $servername = "localhost";
